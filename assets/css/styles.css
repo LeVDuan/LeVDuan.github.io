@@ -379,7 +379,7 @@ i.ti-bag {
 i.ti-check{
     font-size: 16px;
 }
-label.label-form {
+.label-form {
     display: block;
     padding: 24px 0 16px 0;
 }
@@ -390,7 +390,7 @@ input.box-input {
     display: block;
     line-height: 24px;
 }
-button.pay-btn {
+.pay-btn {
     width: 100%;
     background-color: #009688;
     color: #fff;
@@ -419,7 +419,7 @@ footer.form {
     cursor: pointer;
 }
 .open {
-    display: flex;
+    display: flex!important;
 }
 
 @keyframes modal_animation {
@@ -431,4 +431,124 @@ footer.form {
         transform: translateY(0);
         opacity:1
     }
+}
+
+@keyframes mobile-menu-anime {
+    from{
+        transform:translateX(-110px);
+        opacity:0
+    } 
+    to{
+        transform: translateX(0);
+        opacity:1
+    }
+}
+
+.menu-bar {
+    display: none;
+    line-height: 46px;
+    padding: 4px 10px 0 10px;
+}
+
+.ti-align-justify {
+    color: #fff;
+    font-size: 24px;
+}
+.modal-mobile {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: rgb(0,0,0, 0.5);
+    align-items:flex-start;
+    justify-content:left;
+    animation: mobile-menu-anime linear 0.4s;
+}
+
+.mobile-menu {
+    background-color: #000;
+    color: #fff;
+    width: 50%;
+    margin: .5rem 0 0 .5rem;
+}
+#nav-mobile {
+    display: block;
+}
+
+#nav-mobile li a {
+    color: #fff;
+    line-height: 46px;
+    text-decoration: none;
+    padding: 0px 24px;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+#nav-mobile li:hover a{
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+/* Mobile & Tablet */
+@media only screen and (max-width: 63.9375em) {
+
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .member {
+        width: 100%;
+    }
+    .member img {
+        width: 100%;
+    }
+
+    .place-list .col-3{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .row .contact-infor {
+        width: 100%;
+        text-align: justify;
+        margin-left: 16%;
+    }
+    .row .col-2 {
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+    }
+    #nav {
+        display: none;
+    }
+    .menu-bar {
+        display: inline-block;
+    }
+    .form-heading {
+        padding: 0 16px;
+    }
+    .label-form {
+        padding: 16px 0 8px;
+    }
+    .form-container {
+        width: 70%;
+    }
+    .pay-btn {
+        margin: 12px 0;
+    }
+    footer.form {
+        margin: 0 0 8px 0;
+    }
+    h2.text-heading{
+        font-size: 24px;
+    }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    
 }

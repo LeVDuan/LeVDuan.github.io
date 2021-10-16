@@ -15,6 +15,25 @@
         
         <div id="header">
             <!-- Navigation -->
+            <div class="menu-bar js-menu-bar">
+                <i class="ti-align-justify"></i>
+            </div>
+            <div class="modal-mobile js-modal-mobile">
+                <div class="mobile-menu js-mobile-menu">
+                    <ul id="nav-mobile">
+                        <li class="js-li"><a href="#">Home</a></li>
+                        <li class="js-li"><a href="#band">Band</a></li>
+                        <li class="js-li"><a href="#tour">Tour</a></li>
+                        <li class="js-li"><a href="#contact">Contact</a></li>
+                        <li class="js-li"><a href="#">Merchandise</a></li>
+                        <li class="js-li"><a href="#">Extras</a></li>
+                        <li class="js-li"><a href="#">Media</a></li>
+                        <li class="js-li">
+                            <a href="#"><i class="ti-arrow-left"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <ul id="nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#band">Band</a></li>
@@ -205,6 +224,26 @@
             event.stopPropagation()
         })
         
+
+        const btn_bar = document.querySelector('.js-menu-bar')
+        const mobile_modal = document.querySelector('.js-modal-mobile')
+        const mobile_lis = document.querySelectorAll('.js-li')
+        btn_bar.addEventListener('click', show_mobile_menu)
+        function show_mobile_menu()
+        {
+            mobile_modal.classList.add('open')
+        }
+
+        function close_mobile_menu()
+        {
+            mobile_modal.classList.remove('open')
+        }
+
+        for (const li of mobile_lis)
+        {
+            li.addEventListener('click', close_mobile_menu)
+        }
+
     </script>
 </body>
 </html>
