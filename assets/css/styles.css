@@ -478,6 +478,10 @@ footer.form {
     display: block;
 }
 
+#nav-mobile li {
+    border-bottom: 1px solid #fff
+}
+
 #nav-mobile li a {
     color: #fff;
     line-height: 46px;
