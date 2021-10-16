@@ -488,7 +488,7 @@ footer.form {
     width: 100%;
 }
 
-#nav-mobile li:hover a{
+#nav-mobile li:active a{
     color: #000;
     background-color: #fff;
     border-radius: 4px;
