@@ -1,368 +1,423 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Lịch trình Nhật Bản · 15.9 – 30.9.2026</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #faf9f5; display: flex; align-items: center; justify-content: center; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
-    #__bundler_loading { position: fixed; bottom: 20px; right: 20px; font: 13px/1.4 -apple-system, BlinkMacSystemFont, sans-serif; color: #666; background: #fff; padding: 8px 14px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.12); z-index: 10000; }
-    #__bundler_thumbnail { position: fixed; inset: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #faf9f5; z-index: 9999; }
-    #__bundler_thumbnail svg { width: 100%; height: 100%; object-fit: contain; }
-    #__bundler_placeholder { color: #999; font-size: 14px; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #faf9f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    #__bundler_loading {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font: 13px/1.4 -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #666;
+      background: #fff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+      z-index: 10000;
+    }
+
+    #__bundler_thumbnail {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #faf9f5;
+      z-index: 9999;
+    }
+
+    #__bundler_thumbnail svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    #__bundler_placeholder {
+      color: #999;
+      font-size: 14px;
+    }
   </style>
   <noscript>
-    <style>#__bundler_loading { display: none; }</style>
-    <div style="position:fixed;bottom:12px;left:12px;font:13px/1.4 -apple-system,BlinkMacSystemFont,sans-serif;color:#999;background:rgba(255,255,255,0.9);padding:6px 12px;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,0.08);z-index:10000;">
+    <style>
+      #__bundler_loading {
+        display: none;
+      }
+    </style>
+    <div
+      style="position:fixed;bottom:12px;left:12px;font:13px/1.4 -apple-system,BlinkMacSystemFont,sans-serif;color:#999;background:rgba(255,255,255,0.9);padding:6px 12px;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,0.08);z-index:10000;">
       This page requires JavaScript to display.
     </div>
   </noscript>
 </head>
+
 <body>
-  <div id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#f2ece1"></rect><circle cx="50" cy="42" r="17" fill="#b8392a"></circle><text x="50" y="78" font-family="Georgia,serif" font-size="15" fill="#17161a" text-anchor="middle">JP</text></svg></div>
+  <div id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+      <rect width="100" height="100" fill="#f2ece1"></rect>
+      <circle cx="50" cy="42" r="17" fill="#b8392a"></circle><text x="50" y="78" font-family="Georgia,serif"
+        font-size="15" fill="#17161a" text-anchor="middle">JP</text>
+    </svg></div>
   <div id="__bundler_loading">Unpacking...</div>
 
   <script>
-    
-document.addEventListener('DOMContentLoaded', async function() {
-  const loading = document.getElementById('__bundler_loading');
-  function setStatus(msg) { if (loading) loading.textContent = msg; }
 
-  const FONT_MIME = /^(font[/]|application[/](x-)?font-|application[/]vnd\.ms-fontobject)/i;
-  const MIME_TOKEN = /^[\w.+-]+[/][\w.+-]+$/;
-  function toBase64(bytes) {
-    let bin = '';
-    for (let i = 0; i < bytes.length; i += 0x8000) {
-      bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
-    }
-    return btoa(bin);
-  }
+    document.addEventListener('DOMContentLoaded', async function () {
+      const loading = document.getElementById('__bundler_loading');
+      function setStatus(msg) { if (loading) loading.textContent = msg; }
 
-  // Error sink persists across replaceWith since it's on window, not the DOM.
-  window.addEventListener('error', function(e) {
-    // Failed resource loads (CSP-blocked links, scripts, images) fire plain
-    // events at the element — warn only; real JS errors carry message/error.
-    if (!e.message && !e.error && e.target && e.target !== window) {
-      console.warn('[bundle] resource failed to load:',
-        e.target.tagName, String(e.target.src || e.target.href || ''));
-      return;
-    }
-    var p = document.body || document.documentElement;
-    var d = document.getElementById('__bundler_err') || p.appendChild(document.createElement('div'));
-    d.id = '__bundler_err';
-    d.style.cssText = 'position:fixed;bottom:12px;left:12px;right:12px;font:12px/1.4 ui-monospace,monospace;background:#2a1215;color:#ff8a80;padding:10px 14px;border-radius:8px;border:1px solid #5c2b2e;z-index:99999;white-space:pre-wrap;max-height:40vh;overflow:auto';
-    d.textContent = (d.textContent ? d.textContent + String.fromCharCode(10) : '') +
-      '[bundle] ' + (e.message || e.type) +
-      (e.filename ? ' (' + e.filename.slice(0, 60) + ':' + e.lineno + ')' : '');
-  }, true);
-
-  try {
-    const manifestEl = document.querySelector('script[type="__bundler/manifest"]');
-    const templateEl = document.querySelector('script[type="__bundler/template"]');
-    if (!manifestEl || !templateEl) {
-      setStatus('Error: missing bundle data');
-      console.error('[bundler] Missing script tags — manifestEl:', !!manifestEl, 'templateEl:', !!templateEl);
-      return;
-    }
-
-    const manifest = JSON.parse(manifestEl.textContent);
-    let template = JSON.parse(templateEl.textContent);
-
-    // Nested page bundles (iframe targets). Each ships ONCE, in the ROOT
-    // document's manifest; frame srcs carry an about:blank#<uuid> marker
-    // instead of a substitutable uuid. Every document mints the blobs for
-    // its OWN frames — from local text at the root, or text obtained from
-    // its DIRECT parent over the relay protocol below — so each frame
-    // navigation stays same-origin with its initiator and a deduped page
-    // loads at any depth on any host, including a file:// download's
-    // opaque origins (where a blob minted by one document cannot be
-    // navigated to by another).
-    const pageOrderEl = document.querySelector('script[type="__bundler/page_order"]');
-    const pageOrder = pageOrderEl ? JSON.parse(pageOrderEl.textContent) : [];
-    const pageSet = new Set(pageOrder);
-    const pageTexts = {};
-
-    // ── Nested-page text protocol (parent-chain relay) ──
-    // Page bundles ship once, in the ROOT document's manifest. Every
-    // document mints the blobs for its OWN frames, obtaining page text
-    // through a strict parent-chain relay: a document only ever SENDS to
-    // its direct parent (which, for every document the publisher's own
-    // runtime minted, is another publisher document) and only ACCEPTS
-    // text from that direct parent; requests from below are honored only
-    // for the document's own child frames, and the ROOT never sends
-    // upward at all. That last rule is load-bearing: the artifact host's
-    // frame-ancestors allows claude.ai (and friends) to frame an
-    // artifact, so window.top can be a FOREIGN document — a top-addressed
-    // protocol would hand page uuids to that ancestor and accept forged
-    // "page text" from it, minting attacker HTML as an artifact-origin
-    // blob document. The chain never touches the ancestor: requests stop
-    // at the root, replies are origin-addressed per hop (never '*' when
-    // an origin exists), and both directions are origin-gated (on https
-    // a foreign sender's origin can never equal this document's; in
-    // opaque contexts — file:// — everything serializes as 'null', where
-    // an embedded EXTERNAL frame still fails the gate by carrying its
-    // own real origin, and a sandboxed child of such a frame is excluded
-    // by the own-child-frames check plus uuid unguessability). Shape is
-    // deny-by-default: one request form, one reply form, no error
-    // replies.
-    // window.origin is the SERIALIZED SECURITY origin ('null' in opaque
-    // contexts such as a sandboxed preview iframe) — location.origin is
-    // computed from the URL and stays 'https://…' even when the document
-    // is sandboxed, which would misgate every opaque chain.
-    const OWN_TARGET = /^https?:[/][/]/.test(window.origin || '')
-      ? window.origin
-      : '*';
-    function trustedOrigin(e) {
-      if (e.origin === window.origin) return true; // https chains; opaque==opaque
-      // file:// trees: Chrome serializes the file document's origin as
-      // 'file://' while the blob: documents it mints serialize as 'null',
-      // so the two legitimate shapes can never string-match — accept the
-      // pair in both directions. https origins never serialize as either,
-      // and sender identity (own child frame / direct parent) is checked
-      // separately.
-      return (
-        (e.origin === 'null' &&
-          (window.origin === 'file://' ||
-            window.location.protocol === 'file:')) ||
-        (/^file:/.test(e.origin) && window.origin === 'null')
-      );
-    }
-    // Non-empty only in the root document (nested bundles ship an empty
-    // island), so it doubles as the root marker: the root answers from
-    // local text and treats a miss as authoritative — never relaying to
-    // its (possibly foreign) parent.
-    const isPageRoot = pageOrder.length > 0;
-    const blobUrls = {};
-    const resourceBlobs = {};
-    const UUID_SHAPE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
-    const pendingFrames = {}; // uuid -> [{el, frag}] awaiting text for own frames
-    const pendingRelays = {}; // uuid -> [childWindow] awaiting text to pass down
-    function mountPage(el, frag, text) {
-      const pageBlob = new Blob([text], { type: 'text/html' });
-      const u = URL.createObjectURL(pageBlob);
-      resourceBlobs[u] = pageBlob;
-      el.src = u + frag;
-    }
-    function deliverPage(uuid, text) {
-      const frames = pendingFrames[uuid];
-      delete pendingFrames[uuid];
-      if (frames) for (const f of frames) mountPage(f.el, f.frag, text);
-      const relays = pendingRelays[uuid];
-      delete pendingRelays[uuid];
-      if (relays) {
-        for (const cw of relays) {
-          try { cw.postMessage({ __bundler_page: uuid, __bundler_text: text }, OWN_TARGET); } catch (err) { /* gone */ }
+      const FONT_MIME = /^(font[/]|application[/](x-)?font-|application[/]vnd\.ms-fontobject)/i;
+      const MIME_TOKEN = /^[\w.+-]+[/][\w.+-]+$/;
+      function toBase64(bytes) {
+        let bin = '';
+        for (let i = 0; i < bytes.length; i += 0x8000) {
+          bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
         }
+        return btoa(bin);
       }
-    }
-    function ownFrameWindows() {
-      const out = [];
-      for (const f of Array.from(document.querySelectorAll('iframe'))) {
-        try { if (f.contentWindow) out.push(f.contentWindow); } catch (err) { /* detached */ }
-      }
-      return out;
-    }
-    window.addEventListener('message', function (e) {
-      const d = e.data;
-      if (!d || typeof d !== 'object' || !e.source) return;
-      // Origin gate first; the structural checks below (own-child-frames
-      // for requests, direct-parent + solicited-uuid for replies, the
-      // root's never-relay rule) are what hold in fully opaque chains
-      // where origin strings can't discriminate — a sandboxed root's
-      // FOREIGN wrapper still fails all three even though both serialize
-      // as real-vs-'null' rather than matching.
-      if (!trustedOrigin(e)) return;
-      if (typeof d.__bundler_need === 'string' && UUID_SHAPE.test(d.__bundler_need)) {
-        // Requests are honored only for this document's own child frames.
-        if (ownFrameWindows().indexOf(e.source) < 0) return;
-        const uuid = d.__bundler_need;
-        const text = pageTexts[uuid];
-        if (typeof text === 'string') {
-          try { e.source.postMessage({ __bundler_page: uuid, __bundler_text: text }, OWN_TARGET); } catch (err) { /* gone */ }
+
+      // Error sink persists across replaceWith since it's on window, not the DOM.
+      window.addEventListener('error', function (e) {
+        // Failed resource loads (CSP-blocked links, scripts, images) fire plain
+        // events at the element — warn only; real JS errors carry message/error.
+        if (!e.message && !e.error && e.target && e.target !== window) {
+          console.warn('[bundle] resource failed to load:',
+            e.target.tagName, String(e.target.src || e.target.href || ''));
           return;
         }
-        if (isPageRoot || window.parent === window) return; // authoritative miss
-        const waiting = pendingRelays[uuid];
-        if (waiting) {
-          if (waiting.indexOf(e.source) < 0) waiting.push(e.source);
-          return;
-        }
-        // Never-answered uuids would otherwise accumulate forever under a
-        // request spray; past the cap (far above any real page count) new
-        // relays are dropped rather than remembered.
-        if (Object.keys(pendingRelays).length >= 128) return;
-        pendingRelays[uuid] = [e.source];
-        window.parent.postMessage({ __bundler_need: uuid }, OWN_TARGET);
-      } else if (
-        typeof d.__bundler_page === 'string' &&
-        UUID_SHAPE.test(d.__bundler_page) &&
-        typeof d.__bundler_text === 'string'
-      ) {
-        // The shape test is load-bearing beyond tidiness: the solicited
-        // check below uses the in operator, which matches prototype keys
-        // ('__proto__', 'constructor') — an unshaped key would reach
-        // deliverPage and throw, painting the error banner.
-        // Text is accepted only from the direct parent — the document
-        // that minted this one.
-        if (e.source !== window.parent || window.parent === window) return;
-        if (!(d.__bundler_page in pendingFrames) && !(d.__bundler_page in pendingRelays)) return;
-        deliverPage(d.__bundler_page, d.__bundler_text);
-      }
-    });
+        var p = document.body || document.documentElement;
+        var d = document.getElementById('__bundler_err') || p.appendChild(document.createElement('div'));
+        d.id = '__bundler_err';
+        d.style.cssText = 'position:fixed;bottom:12px;left:12px;right:12px;font:12px/1.4 ui-monospace,monospace;background:#2a1215;color:#ff8a80;padding:10px 14px;border-radius:8px;border:1px solid #5c2b2e;z-index:99999;white-space:pre-wrap;max-height:40vh;overflow:auto';
+        d.textContent = (d.textContent ? d.textContent + String.fromCharCode(10) : '') +
+          '[bundle] ' + (e.message || e.type) +
+          (e.filename ? ' (' + e.filename.slice(0, 60) + ':' + e.lineno + ')' : '');
+      }, true);
 
-    const uuids = Object.keys(manifest);
-    setStatus('Unpacking ' + uuids.length + ' assets...');
-
-    await Promise.all(uuids.map(async (uuid) => {
-      const entry = manifest[uuid];
       try {
-        const binaryStr = atob(entry.data);
-        const bytes = new Uint8Array(binaryStr.length);
-        for (let i = 0; i < binaryStr.length; i++) bytes[i] = binaryStr.charCodeAt(i);
+        const manifestEl = document.querySelector('script[type="__bundler/manifest"]');
+        const templateEl = document.querySelector('script[type="__bundler/template"]');
+        if (!manifestEl || !templateEl) {
+          setStatus('Error: missing bundle data');
+          console.error('[bundler] Missing script tags — manifestEl:', !!manifestEl, 'templateEl:', !!templateEl);
+          return;
+        }
 
-        let finalBytes = bytes;
-        if (entry.compressed) {
-          if (typeof DecompressionStream !== 'undefined') {
-            const ds = new DecompressionStream('gzip');
-            const writer = ds.writable.getWriter();
-            const reader = ds.readable.getReader();
-            writer.write(bytes);
-            writer.close();
-            const chunks = [];
-            let totalLen = 0;
-            while (true) {
-              const { done, value } = await reader.read();
-              if (done) break;
-              chunks.push(value);
-              totalLen += value.length;
+        const manifest = JSON.parse(manifestEl.textContent);
+        let template = JSON.parse(templateEl.textContent);
+
+        // Nested page bundles (iframe targets). Each ships ONCE, in the ROOT
+        // document's manifest; frame srcs carry an about:blank#<uuid> marker
+        // instead of a substitutable uuid. Every document mints the blobs for
+        // its OWN frames — from local text at the root, or text obtained from
+        // its DIRECT parent over the relay protocol below — so each frame
+        // navigation stays same-origin with its initiator and a deduped page
+        // loads at any depth on any host, including a file:// download's
+        // opaque origins (where a blob minted by one document cannot be
+        // navigated to by another).
+        const pageOrderEl = document.querySelector('script[type="__bundler/page_order"]');
+        const pageOrder = pageOrderEl ? JSON.parse(pageOrderEl.textContent) : [];
+        const pageSet = new Set(pageOrder);
+        const pageTexts = {};
+
+        // ── Nested-page text protocol (parent-chain relay) ──
+        // Page bundles ship once, in the ROOT document's manifest. Every
+        // document mints the blobs for its OWN frames, obtaining page text
+        // through a strict parent-chain relay: a document only ever SENDS to
+        // its direct parent (which, for every document the publisher's own
+        // runtime minted, is another publisher document) and only ACCEPTS
+        // text from that direct parent; requests from below are honored only
+        // for the document's own child frames, and the ROOT never sends
+        // upward at all. That last rule is load-bearing: the artifact host's
+        // frame-ancestors allows claude.ai (and friends) to frame an
+        // artifact, so window.top can be a FOREIGN document — a top-addressed
+        // protocol would hand page uuids to that ancestor and accept forged
+        // "page text" from it, minting attacker HTML as an artifact-origin
+        // blob document. The chain never touches the ancestor: requests stop
+        // at the root, replies are origin-addressed per hop (never '*' when
+        // an origin exists), and both directions are origin-gated (on https
+        // a foreign sender's origin can never equal this document's; in
+        // opaque contexts — file:// — everything serializes as 'null', where
+        // an embedded EXTERNAL frame still fails the gate by carrying its
+        // own real origin, and a sandboxed child of such a frame is excluded
+        // by the own-child-frames check plus uuid unguessability). Shape is
+        // deny-by-default: one request form, one reply form, no error
+        // replies.
+        // window.origin is the SERIALIZED SECURITY origin ('null' in opaque
+        // contexts such as a sandboxed preview iframe) — location.origin is
+        // computed from the URL and stays 'https://…' even when the document
+        // is sandboxed, which would misgate every opaque chain.
+        const OWN_TARGET = /^https?:[/][/]/.test(window.origin || '')
+          ? window.origin
+          : '*';
+        function trustedOrigin(e) {
+          if (e.origin === window.origin) return true; // https chains; opaque==opaque
+          // file:// trees: Chrome serializes the file document's origin as
+          // 'file://' while the blob: documents it mints serialize as 'null',
+          // so the two legitimate shapes can never string-match — accept the
+          // pair in both directions. https origins never serialize as either,
+          // and sender identity (own child frame / direct parent) is checked
+          // separately.
+          return (
+            (e.origin === 'null' &&
+              (window.origin === 'file://' ||
+                window.location.protocol === 'file:')) ||
+            (/^file:/.test(e.origin) && window.origin === 'null')
+          );
+        }
+        // Non-empty only in the root document (nested bundles ship an empty
+        // island), so it doubles as the root marker: the root answers from
+        // local text and treats a miss as authoritative — never relaying to
+        // its (possibly foreign) parent.
+        const isPageRoot = pageOrder.length > 0;
+        const blobUrls = {};
+        const resourceBlobs = {};
+        const UUID_SHAPE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
+        const pendingFrames = {}; // uuid -> [{el, frag}] awaiting text for own frames
+        const pendingRelays = {}; // uuid -> [childWindow] awaiting text to pass down
+        function mountPage(el, frag, text) {
+          const pageBlob = new Blob([text], { type: 'text/html' });
+          const u = URL.createObjectURL(pageBlob);
+          resourceBlobs[u] = pageBlob;
+          el.src = u + frag;
+        }
+        function deliverPage(uuid, text) {
+          const frames = pendingFrames[uuid];
+          delete pendingFrames[uuid];
+          if (frames) for (const f of frames) mountPage(f.el, f.frag, text);
+          const relays = pendingRelays[uuid];
+          delete pendingRelays[uuid];
+          if (relays) {
+            for (const cw of relays) {
+              try { cw.postMessage({ __bundler_page: uuid, __bundler_text: text }, OWN_TARGET); } catch (err) { /* gone */ }
             }
-            finalBytes = new Uint8Array(totalLen);
-            let offset = 0;
-            for (const chunk of chunks) { finalBytes.set(chunk, offset); offset += chunk.length; }
-          } else {
-            console.warn('DecompressionStream not available, asset ' + uuid + ' may not render');
+          }
+        }
+        function ownFrameWindows() {
+          const out = [];
+          for (const f of Array.from(document.querySelectorAll('iframe'))) {
+            try { if (f.contentWindow) out.push(f.contentWindow); } catch (err) { /* detached */ }
+          }
+          return out;
+        }
+        window.addEventListener('message', function (e) {
+          const d = e.data;
+          if (!d || typeof d !== 'object' || !e.source) return;
+          // Origin gate first; the structural checks below (own-child-frames
+          // for requests, direct-parent + solicited-uuid for replies, the
+          // root's never-relay rule) are what hold in fully opaque chains
+          // where origin strings can't discriminate — a sandboxed root's
+          // FOREIGN wrapper still fails all three even though both serialize
+          // as real-vs-'null' rather than matching.
+          if (!trustedOrigin(e)) return;
+          if (typeof d.__bundler_need === 'string' && UUID_SHAPE.test(d.__bundler_need)) {
+            // Requests are honored only for this document's own child frames.
+            if (ownFrameWindows().indexOf(e.source) < 0) return;
+            const uuid = d.__bundler_need;
+            const text = pageTexts[uuid];
+            if (typeof text === 'string') {
+              try { e.source.postMessage({ __bundler_page: uuid, __bundler_text: text }, OWN_TARGET); } catch (err) { /* gone */ }
+              return;
+            }
+            if (isPageRoot || window.parent === window) return; // authoritative miss
+            const waiting = pendingRelays[uuid];
+            if (waiting) {
+              if (waiting.indexOf(e.source) < 0) waiting.push(e.source);
+              return;
+            }
+            // Never-answered uuids would otherwise accumulate forever under a
+            // request spray; past the cap (far above any real page count) new
+            // relays are dropped rather than remembered.
+            if (Object.keys(pendingRelays).length >= 128) return;
+            pendingRelays[uuid] = [e.source];
+            window.parent.postMessage({ __bundler_need: uuid }, OWN_TARGET);
+          } else if (
+            typeof d.__bundler_page === 'string' &&
+            UUID_SHAPE.test(d.__bundler_page) &&
+            typeof d.__bundler_text === 'string'
+          ) {
+            // The shape test is load-bearing beyond tidiness: the solicited
+            // check below uses the in operator, which matches prototype keys
+            // ('__proto__', 'constructor') — an unshaped key would reach
+            // deliverPage and throw, painting the error banner.
+            // Text is accepted only from the direct parent — the document
+            // that minted this one.
+            if (e.source !== window.parent || window.parent === window) return;
+            if (!(d.__bundler_page in pendingFrames) && !(d.__bundler_page in pendingRelays)) return;
+            deliverPage(d.__bundler_page, d.__bundler_text);
+          }
+        });
+
+        const uuids = Object.keys(manifest);
+        setStatus('Unpacking ' + uuids.length + ' assets...');
+
+        await Promise.all(uuids.map(async (uuid) => {
+          const entry = manifest[uuid];
+          try {
+            const binaryStr = atob(entry.data);
+            const bytes = new Uint8Array(binaryStr.length);
+            for (let i = 0; i < binaryStr.length; i++) bytes[i] = binaryStr.charCodeAt(i);
+
+            let finalBytes = bytes;
+            if (entry.compressed) {
+              if (typeof DecompressionStream !== 'undefined') {
+                const ds = new DecompressionStream('gzip');
+                const writer = ds.writable.getWriter();
+                const reader = ds.readable.getReader();
+                writer.write(bytes);
+                writer.close();
+                const chunks = [];
+                let totalLen = 0;
+                while (true) {
+                  const { done, value } = await reader.read();
+                  if (done) break;
+                  chunks.push(value);
+                  totalLen += value.length;
+                }
+                finalBytes = new Uint8Array(totalLen);
+                let offset = 0;
+                for (const chunk of chunks) { finalBytes.set(chunk, offset); offset += chunk.length; }
+              } else {
+                console.warn('DecompressionStream not available, asset ' + uuid + ' may not render');
+              }
+            }
+
+            if (pageSet.has(uuid)) {
+              pageTexts[uuid] = new TextDecoder().decode(finalBytes);
+              return;
+            }
+            if (FONT_MIME.test(entry.mime) && MIME_TOKEN.test(entry.mime)) {
+              // Strict artifact hosts allow font-src data: but not blob:.
+              blobUrls[uuid] = 'data:' + entry.mime + ';base64,' +
+                (entry.compressed ? toBase64(finalBytes) : entry.data);
+            } else {
+              const blob = new Blob([finalBytes], { type: entry.mime });
+              blobUrls[uuid] = URL.createObjectURL(blob);
+              resourceBlobs[blobUrls[uuid]] = blob;
+            }
+          } catch (err) {
+            console.error('Failed to decode asset ' + uuid + ':', err);
+            const blob = new Blob([], { type: entry.mime });
+            blobUrls[uuid] = URL.createObjectURL(blob);
+            resourceBlobs[blobUrls[uuid]] = blob;
+          }
+        }));
+
+        const extResEl = document.querySelector('script[type="__bundler/ext_resources"]');
+        const extResources = extResEl ? JSON.parse(extResEl.textContent) : [];
+        const resourceMap = {};
+        for (const entry of extResources) {
+          if (blobUrls[entry.uuid]) resourceMap[entry.id] = blobUrls[entry.uuid];
+        }
+
+        // Artifact-host CSP (connect-src 'self') refuses fetch() of blob: URLs —
+        // consumers read these Blobs directly. Survives the swap like the error sink.
+        window.__resourceBlobs = resourceBlobs;
+
+        setStatus('Rendering...');
+        // Page uuids have no blob here — they ride inside about:blank#<uuid>
+        // frame markers the pass below resolves after the swap.
+        for (const uuid of uuids) {
+          if (pageSet.has(uuid)) continue;
+          template = template.split(uuid).join(blobUrls[uuid]);
+        }
+
+        // Strip integrity + crossorigin — blob URLs from a file:// document inherit
+        // a null origin, so crossorigin forces a CORS fetch that SRI then rejects.
+        // The manifest bytes are ours; SRI protects against CDN compromise, not this.
+        template = template.replace(/\s+integrity="[^"]*"/gi, '').replace(/\s+crossorigin="[^"]*"/gi, '');
+
+        const resourceScript = '<script>window.__resources = ' +
+          JSON.stringify(resourceMap).replace(/<\//g, '<\\/') +
+          ';</' + 'script>';
+        // Inject after <head> so the DOCTYPE stays first; prepending the script
+        // would push the parser into quirks mode. DOMParser always emits a <head>
+        // (synthesizing one if the source HTML omitted it) but may carry
+        // attributes through, so match the full opening tag. slice() rather than
+        // replace() keeps us clear of $-pattern substitution in resourceScript.
+        const headOpen = template.match(/<head[^>]*>/i);
+        if (headOpen) {
+          const i = headOpen.index + headOpen[0].length;
+          template = template.slice(0, i) + resourceScript + template.slice(i);
+        }
+
+        // Parse the template and swap the root element. Scripts inserted via
+        // DOMParser/replaceWith are inert per spec — re-create each with
+        // createElement so they execute, awaiting onload for src scripts to
+        // preserve ordering (React before ReactDOM before Babel before text/babel).
+        const doc = new DOMParser().parseFromString(template, 'text/html');
+        document.documentElement.replaceWith(doc.documentElement);
+
+        // Resolve page-frame markers: mint this document's own blob for each
+        // framed page — from local text when this is the root, otherwise by
+        // asking the direct parent over the relay protocol above. An
+        // unanswered request leaves the frame on about:blank, the same
+        // degraded state as a refused embed.
+        {
+          const MARKER = /^about:blank#([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(#.*)?$/;
+          const needed = [];
+          for (const el of Array.from(document.querySelectorAll('iframe'))) {
+            const m = MARKER.exec(el.getAttribute('src') || '');
+            if (!m) continue;
+            const text = pageTexts[m[1]];
+            if (typeof text === 'string') {
+              mountPage(el, m[2] || '', text);
+            } else if (window.parent !== window && !isPageRoot) {
+              const had = pendingFrames[m[1]];
+              (pendingFrames[m[1]] = had || []).push({ el: el, frag: m[2] || '' });
+              if (!had) needed.push(m[1]);
+            }
+          }
+          for (const uuid of needed) {
+            window.parent.postMessage({ __bundler_need: uuid }, OWN_TARGET);
           }
         }
 
-        if (pageSet.has(uuid)) {
-          pageTexts[uuid] = new TextDecoder().decode(finalBytes);
-          return;
+        const dead = Array.from(document.scripts);
+        for (const old of dead) {
+          const s = document.createElement('script');
+          for (const a of old.attributes) s.setAttribute(a.name, a.value);
+          s.textContent = old.textContent;
+          // text/babel scripts with a src: read and inline. transformScriptTags
+          // does XHR against the src, but blob:null/ from a file:// origin is
+          // silently dropped. Inlining makes it a plain inline babel script,
+          // which transformScriptTags handles unconditionally.
+          if ((s.type === 'text/babel' || s.type === 'text/jsx') && s.src) {
+            const pre = resourceBlobs[s.src.split('#')[0]];
+            s.textContent = pre ? await pre.text() : await (await fetch(s.src)).text();
+            s.removeAttribute('src');
+          }
+          const p = s.src ? new Promise(function (r) { s.onload = s.onerror = r; }) : null;
+          old.replaceWith(s);
+          if (p) await p;
         }
-        if (FONT_MIME.test(entry.mime) && MIME_TOKEN.test(entry.mime)) {
-          // Strict artifact hosts allow font-src data: but not blob:.
-          blobUrls[uuid] = 'data:' + entry.mime + ';base64,' +
-            (entry.compressed ? toBase64(finalBytes) : entry.data);
-        } else {
-          const blob = new Blob([finalBytes], { type: entry.mime });
-          blobUrls[uuid] = URL.createObjectURL(blob);
-          resourceBlobs[blobUrls[uuid]] = blob;
+        // Babel standalone auto-transforms type=text/babel on DOMContentLoaded,
+        // which fired before we swapped the document. Trigger manually if present.
+        if (window.Babel && typeof window.Babel.transformScriptTags === 'function') {
+          window.Babel.transformScriptTags();
         }
       } catch (err) {
-        console.error('Failed to decode asset ' + uuid + ':', err);
-        const blob = new Blob([], { type: entry.mime });
-        blobUrls[uuid] = URL.createObjectURL(blob);
-        resourceBlobs[blobUrls[uuid]] = blob;
+        setStatus('Error unpacking: ' + err.message);
+        console.error('Bundle unpack error:', err);
       }
-    }));
-
-    const extResEl = document.querySelector('script[type="__bundler/ext_resources"]');
-    const extResources = extResEl ? JSON.parse(extResEl.textContent) : [];
-    const resourceMap = {};
-    for (const entry of extResources) {
-      if (blobUrls[entry.uuid]) resourceMap[entry.id] = blobUrls[entry.uuid];
-    }
-
-    // Artifact-host CSP (connect-src 'self') refuses fetch() of blob: URLs —
-    // consumers read these Blobs directly. Survives the swap like the error sink.
-    window.__resourceBlobs = resourceBlobs;
-
-    setStatus('Rendering...');
-    // Page uuids have no blob here — they ride inside about:blank#<uuid>
-    // frame markers the pass below resolves after the swap.
-    for (const uuid of uuids) {
-      if (pageSet.has(uuid)) continue;
-      template = template.split(uuid).join(blobUrls[uuid]);
-    }
-
-    // Strip integrity + crossorigin — blob URLs from a file:// document inherit
-    // a null origin, so crossorigin forces a CORS fetch that SRI then rejects.
-    // The manifest bytes are ours; SRI protects against CDN compromise, not this.
-    template = template.replace(/\s+integrity="[^"]*"/gi, '').replace(/\s+crossorigin="[^"]*"/gi, '');
-
-    const resourceScript = '<script>window.__resources = ' +
-      JSON.stringify(resourceMap).replace(/<\//g, '<\\/') +
-      ';</' + 'script>';
-    // Inject after <head> so the DOCTYPE stays first; prepending the script
-    // would push the parser into quirks mode. DOMParser always emits a <head>
-    // (synthesizing one if the source HTML omitted it) but may carry
-    // attributes through, so match the full opening tag. slice() rather than
-    // replace() keeps us clear of $-pattern substitution in resourceScript.
-    const headOpen = template.match(/<head[^>]*>/i);
-    if (headOpen) {
-      const i = headOpen.index + headOpen[0].length;
-      template = template.slice(0, i) + resourceScript + template.slice(i);
-    }
-
-    // Parse the template and swap the root element. Scripts inserted via
-    // DOMParser/replaceWith are inert per spec — re-create each with
-    // createElement so they execute, awaiting onload for src scripts to
-    // preserve ordering (React before ReactDOM before Babel before text/babel).
-    const doc = new DOMParser().parseFromString(template, 'text/html');
-    document.documentElement.replaceWith(doc.documentElement);
-
-    // Resolve page-frame markers: mint this document's own blob for each
-    // framed page — from local text when this is the root, otherwise by
-    // asking the direct parent over the relay protocol above. An
-    // unanswered request leaves the frame on about:blank, the same
-    // degraded state as a refused embed.
-    {
-      const MARKER = /^about:blank#([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(#.*)?$/;
-      const needed = [];
-      for (const el of Array.from(document.querySelectorAll('iframe'))) {
-        const m = MARKER.exec(el.getAttribute('src') || '');
-        if (!m) continue;
-        const text = pageTexts[m[1]];
-        if (typeof text === 'string') {
-          mountPage(el, m[2] || '', text);
-        } else if (window.parent !== window && !isPageRoot) {
-          const had = pendingFrames[m[1]];
-          (pendingFrames[m[1]] = had || []).push({ el: el, frag: m[2] || '' });
-          if (!had) needed.push(m[1]);
-        }
-      }
-      for (const uuid of needed) {
-        window.parent.postMessage({ __bundler_need: uuid }, OWN_TARGET);
-      }
-    }
-
-    const dead = Array.from(document.scripts);
-    for (const old of dead) {
-      const s = document.createElement('script');
-      for (const a of old.attributes) s.setAttribute(a.name, a.value);
-      s.textContent = old.textContent;
-      // text/babel scripts with a src: read and inline. transformScriptTags
-      // does XHR against the src, but blob:null/ from a file:// origin is
-      // silently dropped. Inlining makes it a plain inline babel script,
-      // which transformScriptTags handles unconditionally.
-      if ((s.type === 'text/babel' || s.type === 'text/jsx') && s.src) {
-        const pre = resourceBlobs[s.src.split('#')[0]];
-        s.textContent = pre ? await pre.text() : await (await fetch(s.src)).text();
-        s.removeAttribute('src');
-      }
-      const p = s.src ? new Promise(function(r) { s.onload = s.onerror = r; }) : null;
-      old.replaceWith(s);
-      if (p) await p;
-    }
-    // Babel standalone auto-transforms type=text/babel on DOMContentLoaded,
-    // which fired before we swapped the document. Trigger manually if present.
-    if (window.Babel && typeof window.Babel.transformScriptTags === 'function') {
-      window.Babel.transformScriptTags();
-    }
-  } catch (err) {
-    setStatus('Error unpacking: ' + err.message);
-    console.error('Bundle unpack error:', err);
-  }
-});
+    });
 
   </script>
 
@@ -382,4 +437,5 @@ document.addEventListener('DOMContentLoaded', async function() {
 "<!DOCTYPE html>\n<html><head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<script src=\"4ca03194-e0ad-46c2-badb-cfacf49ca53e\"><\u002Fscript>\n<title>Lịch trình Nhật Bản · 15.9 – 30.9.2026<\u002Ftitle>\n<\u002Fhead>\n<body>\n\n<x-dc>\n<helmet data-dc-atomics=\"\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin=\"\">\n<style>/* vietnamese */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 300;\n  font-display: swap;\n  src: url(\"41c78ab9-3905-44bc-aa5c-29d314f5e360\") format('woff2');\n  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;\n}\n/* latin-ext */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 300;\n  font-display: swap;\n  src: url(\"baf48ecd-b22d-4c89-8898-dd93ab5c2248\") format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n/* latin */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 300;\n  font-display: swap;\n  src: url(\"ac505bcf-4974-4b93-84b1-60097d48949f\") format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n/* vietnamese */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"28415845-90f1-4a87-a714-b63d5830d59c\") format('woff2');\n  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;\n}\n/* latin-ext */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"5e42f53f-fa1f-4487-b12a-264fd3e7fd95\") format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n/* latin */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"88612b35-bd7a-4b8c-a563-daa643da849f\") format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n/* vietnamese */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"68d0de51-4d9a-48c0-ae51-3612ec565eed\") format('woff2');\n  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;\n}\n/* latin-ext */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"a2ec175a-7500-4f89-9cd2-794754400372\") format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n/* latin */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"41c00e95-87b9-4ac1-be28-d39ad2ab49d5\") format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n/* vietnamese */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"868654f3-8750-4633-a5c7-51f172e62fda\") format('woff2');\n  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;\n}\n/* latin-ext */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"d098028f-0d4a-44e5-b934-c9af57c81b10\") format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n/* latin */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"d5662540-de2b-428e-9d45-d95fa7ff33ef\") format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n/* vietnamese */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(\"c4c7e669-b5ca-48bf-ac8a-bfbbc69805c7\") format('woff2');\n  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;\n}\n/* latin-ext */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(\"8fa06e2b-2b66-499f-aacf-9bd26dec8dfb\") format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n/* latin */\n@font-face {\n  font-family: 'Be Vietnam Pro';\n  font-style: normal;\n  font-weight: 700;\n  font-display: swap;\n  src: url(\"5aa27640-f52d-459c-b394-9036a7c5c05c\") format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n/* cyrillic-ext */\n@font-face {\n  font-family: 'Lora';\n  font-style: italic;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"98a7e044-7544-4485-b6de-367f0d4d13d3\") format('woff2');\n  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\n}\n/* cyrillic */\n@font-face {\n  font-family: 'Lora';\n  font-style: italic;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"368fd3c1-6cf0-4e16-8f15-f0bdb5f531c1\") format('woff2');\n  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\n}\n/* math */\n@font-face {\n  font-family: 'Lora';\n  font-style: italic;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"42c337e8-a817-4db7-9ce3-4593f8e8c3e6\") format('woff2');\n  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;\n}\n/* symbols */\n@font-face {\n  font-family: 'Lora';\n  font-style: italic;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"cef7556b-9f91-4309-bf76-43e689ba2f09\") format('woff2');\n  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;\n}\n/* vietnamese */\n@font-face {\n  font-family: 'Lora';\n  font-style: italic;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"d6122f0d-c72e-4fc5-a952-c106207aeef6\") format('woff2');\n  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;\n}\n/* latin-ext */\n@font-face {\n  font-family: 'Lora';\n  font-style: italic;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"ef389e4d-34a4-4a2b-9257-78bb4f5f5267\") format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n/* latin */\n@font-face {\n  font-family: 'Lora';\n  font-style: italic;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"00e1d646-aa79-472d-a420-716eec4d1dfa\") format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n/* cyrillic-ext */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"253193bc-9e1f-4c62-a9cf-10e838560f69\") format('woff2');\n  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\n}\n/* cyrillic */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"fa88d5b9-89a7-4963-b563-00411afb05ad\") format('woff2');\n  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\n}\n/* math */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"0c430fbb-62f2-4f86-82a8-298ba743a09a\") format('woff2');\n  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;\n}\n/* symbols */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"3a1998c2-e63e-45b7-9f4e-22cdd7948dd3\") format('woff2');\n  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;\n}\n/* vietnamese */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"99fa69a1-9ec5-4765-b174-abc9f905c2d4\") format('woff2');\n  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;\n}\n/* latin-ext */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"72bb9771-5b9a-4fb2-8556-d3a8ab1b9116\") format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n/* latin */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"b0740c7a-64b2-4237-84e6-868758f5598a\") format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n/* cyrillic-ext */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"253193bc-9e1f-4c62-a9cf-10e838560f69\") format('woff2');\n  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\n}\n/* cyrillic */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"fa88d5b9-89a7-4963-b563-00411afb05ad\") format('woff2');\n  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\n}\n/* math */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"0c430fbb-62f2-4f86-82a8-298ba743a09a\") format('woff2');\n  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;\n}\n/* symbols */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"3a1998c2-e63e-45b7-9f4e-22cdd7948dd3\") format('woff2');\n  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;\n}\n/* vietnamese */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"99fa69a1-9ec5-4765-b174-abc9f905c2d4\") format('woff2');\n  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;\n}\n/* latin-ext */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"72bb9771-5b9a-4fb2-8556-d3a8ab1b9116\") format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n/* latin */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(\"b0740c7a-64b2-4237-84e6-868758f5598a\") format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n/* cyrillic-ext */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"253193bc-9e1f-4c62-a9cf-10e838560f69\") format('woff2');\n  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\n}\n/* cyrillic */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"fa88d5b9-89a7-4963-b563-00411afb05ad\") format('woff2');\n  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\n}\n/* math */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"0c430fbb-62f2-4f86-82a8-298ba743a09a\") format('woff2');\n  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;\n}\n/* symbols */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"3a1998c2-e63e-45b7-9f4e-22cdd7948dd3\") format('woff2');\n  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;\n}\n/* vietnamese */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"99fa69a1-9ec5-4765-b174-abc9f905c2d4\") format('woff2');\n  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;\n}\n/* latin-ext */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"72bb9771-5b9a-4fb2-8556-d3a8ab1b9116\") format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n/* latin */\n@font-face {\n  font-family: 'Lora';\n  font-style: normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"b0740c7a-64b2-4237-84e6-868758f5598a\") format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n<\u002Fstyle>\n<style>\nhtml,body{margin:0;padding:0;background:#e7e0d3;-webkit-font-smoothing:antialiased}\na{color:#b8392a;text-decoration:none}\na:hover{color:#8f2b1f}\n*{box-sizing:border-box}\n.pgr::-webkit-scrollbar{display:none}\n@keyframes slideIn{from{transform:translateX(14px);opacity:0}to{transform:translateX(0);opacity:1}}\n@keyframes fadeUp{from{transform:translateY(10px);opacity:0}to{transform:translateY(0);opacity:1}}\n@keyframes inkGrow{from{transform:scaleY(0)}to{transform:scaleY(1)}}\n<\u002Fstyle>\n<\u002Fhelmet>\n<div style=\"position:relative;width:100%;max-width:480px;margin:0 auto;min-height:100vh;background:#f2ece1;color:#17161a;font-family:'Be Vietnam Pro',system-ui,sans-serif;overflow-x:hidden;box-shadow:0 0 60px rgba(23,22,26,.12)\">\n\n  <sc-if value=\"{{ isCover }}\" hint-placeholder-val=\"{{ true }}\">\n    <div style=\"min-height:100vh;display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top) + 42px) 24px calc(env(safe-area-inset-bottom) + 28px);background:linear-gradient(180deg,#f6f1e8 0%,#f2ece1 46%,#eee6d8 100%)\">\n      <div style=\"display:flex;align-items:center;gap:10px;animation:fadeUp .5s ease both\">\n        <div style=\"width:26px;height:1px;background:#b8392a\"><\u002Fdiv>\n        <div style=\"font-size:10.5px;letter-spacing:.24em;font-weight:600;color:#b8392a\">LỊCH TRÌNH<\u002Fdiv>\n      <\u002Fdiv>\n\n      <div style=\"margin-top:auto;padding-top:48px;animation:fadeUp .6s .06s ease both\">\n        <div style=\"font-family:Lora,serif;font-size:15px;color:#7a7266;letter-spacing:.02em\">日本<\u002Fdiv>\n        <h1 style=\"font-family:Lora,serif;font-weight:500;font-size:56px;line-height:.98;margin:6px 0 0;letter-spacing:-.02em\">Nhật<br>Bản<\u002Fh1>\n        <div style=\"display:flex;align-items:baseline;gap:8px;margin-top:16px\">\n          <div style=\"font-size:15px;font-weight:500;color:#2a3560\">15.9 — 30.9.2026<\u002Fdiv>\n          <div style=\"flex:1;height:1px;background:rgba(23,22,26,.14)\"><\u002Fdiv>\n          <div style=\"font-size:12px;color:#7a7266\">15 ngày<\u002Fdiv>\n        <\u002Fdiv>\n      <\u002Fdiv>\n\n      <sc-if value=\"{{ showCountdown }}\" hint-placeholder-val=\"{{ true }}\">\n        <div style=\"margin-top:30px;padding:18px 20px;background:#fffdf8;border:1px solid rgba(23,22,26,.09);border-radius:2px;display:flex;align-items:flex-end;gap:14px;animation:fadeUp .6s .12s ease both\">\n          <div style=\"font-family:Lora,serif;font-size:52px;line-height:.85;color:#b8392a;font-weight:500\">{{ cdNum }}<\u002Fdiv>\n          <div style=\"padding-bottom:5px\">\n            <div style=\"font-size:13px;font-weight:600;letter-spacing:.01em\">{{ cdUnit }}<\u002Fdiv>\n            <div style=\"font-size:11.5px;color:#7a7266;margin-top:2px\">{{ cdSub }}<\u002Fdiv>\n          <\u002Fdiv>\n        <\u002Fdiv>\n      <\u002Fsc-if>\n\n      <div style=\"margin-top:26px;display:flex;flex-direction:column;gap:0;animation:fadeUp .6s .18s ease both\">\n        <sc-for list=\"{{ legs }}\" as=\"leg\" hint-placeholder-count=\"4\">\n          <div style=\"display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px dashed rgba(23,22,26,.13)\">\n            <div style=\"width:5px;height:5px;border-radius:50%;background:#2a3560;flex:none\"><\u002Fdiv>\n            <div style=\"font-size:12.5px;font-weight:600;letter-spacing:.06em;flex:1\">{{ leg.name }}<\u002Fdiv>\n            <div style=\"font-size:11.5px;color:#7a7266\">{{ leg.range }}<\u002Fdiv>\n          <\u002Fdiv>\n        <\u002Fsc-for>\n      <\u002Fdiv>\n\n      <div style=\"margin-top:26px;display:grid;grid-template-columns:repeat(5,1fr);gap:6px;animation:fadeUp .6s .24s ease both\">\n        <sc-for list=\"{{ days }}\" as=\"d\" hint-placeholder-count=\"15\">\n          <button sc-camel-on-click=\"{{ d.jump }}\" style=\"appearance:none;border:1px solid rgba(23,22,26,.12);background:#fffdf8;border-radius:2px;padding:8px 2px 7px;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif;display:flex;flex-direction:column;align-items:center;gap:2px\" style-hover=\"border-color:#b8392a;background:#fff\">\n            <span style=\"font-size:9px;letter-spacing:.08em;color:#7a7266\">{{ d.num }}<\u002Fspan>\n            <span style=\"font-family:Lora,serif;font-size:14px;color:#17161a\">{{ d.dateShort }}<\u002Fspan>\n          <\u002Fbutton>\n        <\u002Fsc-for>\n      <\u002Fdiv>\n\n      <button sc-camel-on-click=\"{{ goDays }}\" style=\"margin-top:24px;appearance:none;border:none;background:#17161a;color:#f2ece1;padding:17px;border-radius:2px;font-family:'Be Vietnam Pro',sans-serif;font-size:13.5px;font-weight:600;letter-spacing:.03em;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;animation:fadeUp .6s .3s ease both\" style-hover=\"background:#2a3560\">\n        Xem lịch trình từng ngày\n        <span style=\"font-size:15px\">→<\u002Fspan>\n      <\u002Fbutton>\n    <\u002Fdiv>\n  <\u002Fsc-if>\n\n  <sc-if value=\"{{ isDays }}\" hint-placeholder-val=\"{{ true }}\">\n    <div style=\"min-height:100vh;display:flex;flex-direction:column\">\n      <div style=\"position:sticky;top:0;z-index:20;background:rgba(242,236,225,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(23,22,26,.1);padding:calc(env(safe-area-inset-top) + 12px) 18px 0\">\n        <div style=\"display:flex;align-items:center;gap:12px\">\n          <button sc-camel-on-click=\"{{ goCover }}\" style=\"appearance:none;border:1px solid rgba(23,22,26,.14);background:#fffdf8;width:34px;height:34px;border-radius:2px;cursor:pointer;font-size:15px;color:#17161a;flex:none\" style-hover=\"border-color:#b8392a\">←<\u002Fbutton>\n          <div style=\"flex:1;min-width:0\">\n            <div style=\"display:flex;align-items:baseline;gap:8px\">\n              <span style=\"font-family:Lora,serif;font-size:19px;font-weight:500\">{{ curNum }}<\u002Fspan>\n              <span style=\"font-size:11.5px;color:#7a7266\">{{ curDate }} · {{ curDow }}<\u002Fspan>\n            <\u002Fdiv>\n          <\u002Fdiv>\n          <div style=\"font-size:11px;color:#7a7266;font-variant-numeric:tabular-nums;flex:none\">{{ curCounter }}<\u002Fdiv>\n        <\u002Fdiv>\n        <div style=\"display:flex;gap:3px;padding:11px 0 9px\">\n          <sc-for list=\"{{ days }}\" as=\"d\" hint-placeholder-count=\"15\">\n            <button sc-camel-on-click=\"{{ d.jump }}\" style=\"flex:1;appearance:none;border:none;cursor:pointer;padding:0;height:3px;border-radius:2px;background:{{ d.tickColor }}\"><\u002Fbutton>\n          <\u002Fsc-for>\n        <\u002Fdiv>\n      <\u002Fdiv>\n\n      <div class=\"pgr\" ref=\"{{ pagerRef }}\" sc-camel-on-scroll=\"{{ onScroll }}\" style=\"display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;flex:1\">\n        <sc-for list=\"{{ days }}\" as=\"day\" hint-placeholder-count=\"3\">\n          <div style=\"flex:none;width:100%;scroll-snap-align:start;padding:26px 18px calc(env(safe-area-inset-bottom) + 46px)\">\n            <div style=\"font-size:10px;letter-spacing:.22em;font-weight:600;color:#b8392a\">{{ day.city }}<\u002Fdiv>\n            <h2 style=\"font-family:Lora,serif;font-weight:500;font-size:27px;line-height:1.14;margin:8px 0 0;letter-spacing:-.01em\">{{ day.title }}<\u002Fh2>\n            <sc-if value=\"{{ day.timeSpan }}\" hint-placeholder-val=\"{{ false }}\">\n              <div style=\"margin-top:8px;font-size:12px;color:#2a3560;font-weight:500\">{{ day.timeSpan }}<\u002Fdiv>\n            <\u002Fsc-if>\n\n            <div style=\"margin-top:22px;position:relative;padding-left:2px\">\n              <sc-for list=\"{{ day.items }}\" as=\"item\" hint-placeholder-count=\"5\">\n                <button sc-camel-on-click=\"{{ item.open }}\" style=\"width:100%;text-align:left;appearance:none;border:none;background:transparent;padding:0 0 2px;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif;display:block\">\n                  <div style=\"display:flex;gap:13px\">\n                    <div style=\"flex:none;width:62px;padding-top:13px\">\n                      <div style=\"font-size:11px;font-weight:600;color:#2a3560;line-height:1.3;font-variant-numeric:tabular-nums\">{{ item.t }}<\u002Fdiv>\n                    <\u002Fdiv>\n                    <div style=\"flex:none;width:11px;display:flex;flex-direction:column;align-items:center;padding-top:15px\">\n                      <div style=\"width:7px;height:7px;border-radius:50%;background:{{ item.dot }};flex:none\"><\u002Fdiv>\n                      <div style=\"width:1px;flex:1;background:rgba(23,22,26,.15);margin-top:3px\"><\u002Fdiv>\n                    <\u002Fdiv>\n                    <div style=\"flex:1;min-width:0;padding:11px 12px 13px;background:#fffdf8;border:1px solid rgba(23,22,26,.08);border-radius:2px;margin-bottom:8px\">\n                      <div style=\"font-size:13.5px;line-height:1.45;text-wrap:pretty\">{{ item.a }}<\u002Fdiv>\n                      <sc-if value=\"{{ item.hasSubs }}\" hint-placeholder-val=\"{{ false }}\">\n                        <div style=\"margin-top:7px;display:flex;flex-direction:column;gap:4px\">\n                          <sc-for list=\"{{ item.s }}\" as=\"sub\" hint-placeholder-count=\"1\">\n                            <div style=\"font-size:11.5px;line-height:1.5;color:#7a7266;text-wrap:pretty\">{{ sub }}<\u002Fdiv>\n                          <\u002Fsc-for>\n                        <\u002Fdiv>\n                      <\u002Fsc-if>\n                      <sc-if value=\"{{ item.hasRefs }}\" hint-placeholder-val=\"{{ false }}\">\n                        <div style=\"margin-top:9px;display:flex;flex-wrap:wrap;gap:5px\">\n                          <sc-for list=\"{{ item.r }}\" as=\"ref\" hint-placeholder-count=\"1\">\n                            <span style=\"font-size:9.5px;letter-spacing:.08em;font-weight:600;color:#b8392a;border:1px solid rgba(184,57,42,.34);border-radius:2px;padding:3px 6px\">{{ ref.k }}<\u002Fspan>\n                          <\u002Fsc-for>\n                        <\u002Fdiv>\n                      <\u002Fsc-if>\n                    <\u002Fdiv>\n                  <\u002Fdiv>\n                <\u002Fbutton>\n              <\u002Fsc-for>\n            <\u002Fdiv>\n\n            <sc-if value=\"{{ day.hasPlaces }}\" hint-placeholder-val=\"{{ false }}\">\n              <div style=\"margin-top:26px\">\n                <div style=\"display:flex;align-items:center;gap:9px;margin-bottom:11px\">\n                  <div style=\"font-size:10px;letter-spacing:.2em;font-weight:600;color:#7a7266\">ĐỊA DANH<\u002Fdiv>\n                  <div style=\"flex:1;height:1px;background:rgba(23,22,26,.12)\"><\u002Fdiv>\n                <\u002Fdiv>\n                <sc-for list=\"{{ day.places }}\" as=\"pl\" hint-placeholder-count=\"1\">\n                  <button sc-camel-on-click=\"{{ pl.open }}\" style=\"width:100%;text-align:left;appearance:none;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif;background:#2a3560;border:none;border-radius:2px;padding:15px 16px;margin-bottom:8px;display:flex;align-items:center;gap:12px\" style-hover=\"background:#1f2a4d\">\n                    <div style=\"flex:1;min-width:0\">\n                      <div style=\"font-family:Lora,serif;font-size:16px;color:#f6f1e8;line-height:1.25;text-wrap:pretty\">{{ pl.name }}<\u002Fdiv>\n                      <div style=\"font-size:10px;letter-spacing:.1em;color:rgba(246,241,232,.62);margin-top:5px\">{{ pl.meta }}<\u002Fdiv>\n                    <\u002Fdiv>\n                    <div style=\"flex:none;color:#f6f1e8;font-size:16px\">→<\u002Fdiv>\n                  <\u002Fbutton>\n                <\u002Fsc-for>\n              <\u002Fdiv>\n            <\u002Fsc-if>\n\n            <sc-if value=\"{{ day.showNotes }}\" hint-placeholder-val=\"{{ false }}\">\n              <div style=\"margin-top:26px;display:flex;flex-direction:column;gap:14px\">\n                <sc-for list=\"{{ day.blocks }}\" as=\"b\" hint-placeholder-count=\"2\">\n                  <div style=\"border-left:2px solid #b8392a;padding:1px 0 1px 13px\">\n                    <div style=\"font-size:10px;letter-spacing:.18em;font-weight:600;color:#b8392a;margin-bottom:6px\">{{ b.label }}<\u002Fdiv>\n                    <sc-for list=\"{{ b.lines }}\" as=\"ln\" hint-placeholder-count=\"1\">\n                      <div style=\"font-size:12.5px;line-height:1.6;color:#4a463f;text-wrap:pretty;margin-bottom:4px\">{{ ln }}<\u002Fdiv>\n                    <\u002Fsc-for>\n                  <\u002Fdiv>\n                <\u002Fsc-for>\n              <\u002Fdiv>\n            <\u002Fsc-if>\n\n            <div style=\"margin-top:30px;display:flex;gap:8px\">\n              <button sc-camel-on-click=\"{{ prev }}\" style=\"flex:1;appearance:none;border:1px solid rgba(23,22,26,.14);background:transparent;padding:13px;border-radius:2px;font-family:'Be Vietnam Pro',sans-serif;font-size:12px;color:#4a463f;cursor:pointer\" style-hover=\"border-color:#17161a\">← Trước<\u002Fbutton>\n              <button sc-camel-on-click=\"{{ next }}\" style=\"flex:1;appearance:none;border:1px solid rgba(23,22,26,.14);background:transparent;padding:13px;border-radius:2px;font-family:'Be Vietnam Pro',sans-serif;font-size:12px;color:#4a463f;cursor:pointer\" style-hover=\"border-color:#17161a\">Tiếp →<\u002Fbutton>\n            <\u002Fdiv>\n          <\u002Fdiv>\n        <\u002Fsc-for>\n      <\u002Fdiv>\n    <\u002Fdiv>\n  <\u002Fsc-if>\n\n  <sc-if value=\"{{ isDetail }}\" hint-placeholder-val=\"{{ false }}\">\n    <div style=\"position:fixed;inset:0;z-index:60;max-width:480px;margin:0 auto;background:#f2ece1;overflow-y:auto;animation:slideIn .28s cubic-bezier(.2,.8,.2,1) both\">\n      <div style=\"position:sticky;top:0;z-index:5;background:rgba(242,236,225,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(23,22,26,.1);padding:calc(env(safe-area-inset-top) + 12px) 18px 12px;display:flex;align-items:center;gap:12px\">\n        <button sc-camel-on-click=\"{{ closeDetail }}\" style=\"appearance:none;border:1px solid rgba(23,22,26,.14);background:#fffdf8;width:34px;height:34px;border-radius:2px;cursor:pointer;font-size:15px;flex:none\" style-hover=\"border-color:#b8392a\">←<\u002Fbutton>\n        <div style=\"font-size:11px;letter-spacing:.14em;color:#7a7266;font-weight:600\">{{ dtCrumb }}<\u002Fdiv>\n      <\u002Fdiv>\n\n      <div style=\"padding:28px 20px calc(env(safe-area-inset-bottom) + 44px)\">\n        <sc-if value=\"{{ dtTime }}\" hint-placeholder-val=\"{{ false }}\">\n          <div style=\"display:inline-block;font-size:11.5px;font-weight:600;color:#f6f1e8;background:#2a3560;padding:5px 10px;border-radius:2px;letter-spacing:.02em\">{{ dtTime }}<\u002Fdiv>\n        <\u002Fsc-if>\n        <h2 style=\"font-family:Lora,serif;font-weight:500;font-size:29px;line-height:1.18;margin:14px 0 0;letter-spacing:-.01em;text-wrap:pretty\">{{ dtTitle }}<\u002Fh2>\n\n        <sc-if value=\"{{ dtHasSubs }}\" hint-placeholder-val=\"{{ false }}\">\n          <div style=\"margin-top:16px;display:flex;flex-direction:column;gap:8px\">\n            <sc-for list=\"{{ dtSubs }}\" as=\"sub\" hint-placeholder-count=\"2\">\n              <div style=\"font-size:13.5px;line-height:1.62;color:#4a463f;text-wrap:pretty\">{{ sub }}<\u002Fdiv>\n            <\u002Fsc-for>\n          <\u002Fdiv>\n        <\u002Fsc-if>\n\n        <sc-if value=\"{{ dtHasLinks }}\" hint-placeholder-val=\"{{ false }}\">\n          <div style=\"margin-top:24px;display:flex;flex-direction:column;gap:7px\">\n            <sc-for list=\"{{ dtLinks }}\" as=\"lk\" hint-placeholder-count=\"2\">\n              <a href=\"{{ lk.u }}\" target=\"_blank\" rel=\"noopener\" style=\"display:flex;align-items:center;gap:12px;background:#fffdf8;border:1px solid rgba(23,22,26,.1);border-radius:2px;padding:14px 15px;text-decoration:none\" style-hover=\"border-color:#b8392a;background:#fff\">\n                <div style=\"flex:none;width:30px;height:30px;border-radius:2px;background:{{ lk.bg }};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#f6f1e8;font-family:Lora,serif\">{{ lk.g }}<\u002Fdiv>\n                <div style=\"flex:1;min-width:0\">\n                  <div style=\"font-size:12.5px;font-weight:600;color:#17161a\">{{ lk.k }}<\u002Fdiv>\n                  <div style=\"font-size:10.5px;color:#7a7266;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:1px\">{{ lk.host }}<\u002Fdiv>\n                <\u002Fdiv>\n                <div style=\"flex:none;color:#b8392a;font-size:14px\">↗<\u002Fdiv>\n              <\u002Fa>\n            <\u002Fsc-for>\n          <\u002Fdiv>\n        <\u002Fsc-if>\n\n        <sc-if value=\"{{ dtHasBlocks }}\" hint-placeholder-val=\"{{ false }}\">\n          <div style=\"margin-top:28px;display:flex;flex-direction:column;gap:18px\">\n            <sc-for list=\"{{ dtBlocks }}\" as=\"b\" hint-placeholder-count=\"2\">\n              <div>\n                <div style=\"display:flex;align-items:center;gap:9px;margin-bottom:8px\">\n                  <div style=\"font-size:10px;letter-spacing:.18em;font-weight:600;color:#7a7266\">{{ b.label }}<\u002Fdiv>\n                  <div style=\"flex:1;height:1px;background:rgba(23,22,26,.12)\"><\u002Fdiv>\n                <\u002Fdiv>\n                <sc-for list=\"{{ b.lines }}\" as=\"ln\" hint-placeholder-count=\"1\">\n                  <div style=\"font-size:12.5px;line-height:1.62;color:#4a463f;text-wrap:pretty;margin-bottom:5px\">{{ ln }}<\u002Fdiv>\n                <\u002Fsc-for>\n              <\u002Fdiv>\n            <\u002Fsc-for>\n          <\u002Fdiv>\n        <\u002Fsc-if>\n\n        <sc-if value=\"{{ dtHasSiblings }}\" hint-placeholder-val=\"{{ false }}\">\n          <div style=\"margin-top:32px\">\n            <div style=\"font-size:10px;letter-spacing:.18em;font-weight:600;color:#7a7266;margin-bottom:10px\">CÙNG NGÀY<\u002Fdiv>\n            <sc-for list=\"{{ dtSiblings }}\" as=\"sb\" hint-placeholder-count=\"3\">\n              <button sc-camel-on-click=\"{{ sb.open }}\" style=\"width:100%;text-align:left;appearance:none;background:transparent;border:none;border-top:1px solid rgba(23,22,26,.1);padding:11px 2px;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif;display:flex;gap:11px;align-items:baseline\">\n                <span style=\"flex:none;width:58px;font-size:10.5px;font-weight:600;color:#2a3560;font-variant-numeric:tabular-nums\">{{ sb.t }}<\u002Fspan>\n                <span style=\"flex:1;font-size:12.5px;color:#4a463f;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap\">{{ sb.a }}<\u002Fspan>\n              <\u002Fbutton>\n            <\u002Fsc-for>\n          <\u002Fdiv>\n        <\u002Fsc-if>\n      <\u002Fdiv>\n    <\u002Fdiv>\n  <\u002Fsc-if>\n\n<\u002Fdiv>\n<\u002Fx-dc>\n<script type=\"text/x-dc\" data-dc-script=\"\" data-props=\"{&quot;showCountdown&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Nội dung&quot;},&quot;showDayNotes&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Nội dung&quot;},&quot;showPlaces&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Nội dung&quot;}}\">\nconst D = [\n{city:\"HÀ NỘI\",num:\"Ngày 0\",date:\"15/9\",dow:\"Thứ Ba\",title:\"Di chuyển ra sân bay Nội Bài\",span:\"20:30 - 21:30\",\n items:[{t:\"20:30 - 21:30\",a:\"Di chuyển ra sân bay Nội Bài\"}],\n tips:[\"Ngày đầu ưu tiên nghỉ ngơi. Chuẩn bị IC card/Suica hoặc phương án đi tàu, SIM/eSIM.\"],\n move:[\"Narita → nơi ở; tàu/xe theo vị trí nhà người yêu\"]},\n\n{city:\"TOKYO\",num:\"Ngày 1\",date:\"16/9\",dow:\"Thứ Tư\",title:\"Đáp chuyến bay đến Narita\",span:\"00:30 - 8:00\",\n items:[\n  {t:\"00:30 - 8:00\",a:\"Đáp chuyến bay đến Narita\"},\n  {t:\"08:00\",a:\"đáp Narita → nhập cảnh, lấy hành lý\"},\n  {t:\"8:00 - 8:50\",a:\"Nhập cảnh, lấy hành lý\",s:[\"Điền tờ khai nhập cảnh trước 1 ngày\"],r:[{k:\"VJW\",u:\"https://www.vjw.digital.go.jp/main/#/vjwplo001\"}]},\n  {t:\"09:30–11:00\",a:\"di chuyển về nhà ăm chã iu\"},\n  {t:\"18:00 - 19:30\",a:\"đi đánh bóng chày, Sunshine City ở Ikebukuro.\"},\n  {t:\"20:00 -21:30\",a:\"Ăn nướng Kingu ở itabashi\"}]},\n\n{city:\"TOKYO\",num:\"Ngày 2\",date:\"17/9\",dow:\"Thứ Năm\",title:\"TOKYO – SHIBUYA / HARAJUKU\",\n items:[\n  {t:\"09:00\",a:\"Ngủ dậy ôm chồng iu\"},\n  {t:\"11:00\",a:\"Đi mall Ito Yokado Akabane\"},\n  {t:\"13:00\",a:\"Ăn trưa\"},\n  {t:\"14:30\",a:\"Shibuya Crossing + Hachiko (tượng gần Shibuya)\"},\n  {t:\"16:00–18:00\",a:\"Shibuya Sky (khung giờ đẹp)\",s:[\"Shibuya Sky nên đặt trước (Mở bán trước 15 ngày, khung giờ hot nhất 16-18h ngắm hoàng hôn)\"]},\n  {t:\"19:00 - 20:30\",a:\"Ăn lẩu shabushabu ở Shibuya -> Có thể chờ hơi lâu\"},\n  {t:\"20:45 - 21:30\",a:\"Đi Ebisu graden place tầng 38\"}],\n tips:[\"Shibuya Sky nên đặt trước (Mở bán trước 15 ngày, khung giờ hot nhất 16-18h ngắm hoàng hôn)\"],\n move:[\"Tàu nội thành Tokyo\"]},\n\n{city:\"TOKYO\",num:\"Ngày 3\",date:\"18/9\",dow:\"Thứ Sáu\",title:\"TOKYO – TOKYO TOWER / ROPPONGI\",\n items:[\n  {t:\"17:35–18:30\",a:\"🗼 Tokyo Tower\"},\n  {t:\"18:30–19:00\",a:\"🚶 Tokyo Tower → Azabudai Hills\"},\n  {t:\"19:30–19:50\",a:\"Di chuyển sang Tokyo Midtown/Roppongi\"},\n  {t:\"19:50–20:50\",a:\"🐟 Ăn tối tại Nihonbashi Kaisen-don Tsujihan\",r:[{k:\"Google Maps\",u:\"https://www.google.com/maps/search/?api=1&query=Nihonbashi+Kaisen+Don+Tsujihan+Tokyo+Midtown\"}]},\n  {t:\"~21:15–22:00\",a:\"Roppongi\"}],\n move:[\"Nội thành Tokyo\"]},\n\n{city:\"TOKYO\",num:\"Ngày 4\",date:\"19/9\",dow:\"Thứ Bảy\",title:\"TOKYO → BELLUNA DOME – THE WEEKND CONCERT\",\n items:[\n  {t:\"Sáng\",a:\"nghỉ ngơi / ăn sáng tại nhà\"},\n  {t:\"11:00–13:00\",a:\"ăn trưa, chuẩn bị đồ concert\"},\n  {t:\"14:00–15:00\",a:\"rời Tokyo đi Belluna Dome\"},\n  {t:\"Chiều\",a:\"đến khu vực dome, ăn nhẹ, check-in\"},\n  {t:\"Tối\",a:\"xem concert The Weeknd\"},\n  {t:\"Sau concert\",a:\"về Tokyo/nhà người yêu\"}],\n tips:[\"Không xếp lịch tham quan xa trong ngày concert. Kiểm tra trước quy định túi xách, vé điện tử và phương án về sau concert.\"],\n move:[\"Tokyo → Belluna Dome (Tokorozawa, Saitama) → Tokyo\"],\n places:[{name:\"Arashiyama\",note:\"Yusai-Tei Gallerycó thể thuê Kimono để chụp ở đây\",\n   links:[{k:\"TikTok\",u:\"https://www.tiktok.com/@otis171298/video/7630266082854505749?_r=1&_t=ZS-95rYGHnj7A5\"},{k:\"Threads\",u:\"https://www.threads.com/@_wuyhnevercry_/post/DW_-J7aAQh-\"}]}]},\n\n{city:\"OSAKA / KYOTO\",num:\"Ngày 5\",date:\"20/9\",dow:\"Chủ Nhật\",title:\"TOKYO → OSAKA\",\n items:[\n  {t:\"Sáng\",a:\"nghỉ ngơi, thu xếp hành lý\"},\n  {t:\"~11:30–12:30\",a:\"ra ga\"},\n  {t:\"Trưa\",a:\"Shinkansen ga Tokyo → Ga Shin Osaka\"},\n  {t:\"Chiều\",a:\"check-in nhà Dương\"},\n  {t:\"17:00–19:00\",a:\"Nishiki Market / khu Kawaramachi -> Vì ở Osaka nên phải đổi lại chỗ này\"},\n  {t:\"Tối\",a:\"dạo phố Gion nhẹ nhàng\"}],\n tips:[\"Nên đi Kyoto vào khoảng trưa như kế hoạch. Chọn ghế D/E trên Shinkansen nếu muốn ngắm Fuji.\"],\n move:[\"Shinkansen Nozomi ~2 giờ 15 phút\"],\n places:[{name:\"Ruriko-in Temple\",links:[{k:\"Google Maps\",u:\"https://maps.app.goo.gl/QrYPsBgFQHdfUDUN9\"},{k:\"Instagram\",u:\"https://www.instagram.com/reel/DXhApYKk4Er/?utm_source=ig_web_button_share_sheet\"}]}]},\n\n{city:\"KYOTO\",num:\"Ngày 6\",date:\"21/9\",dow:\"Thứ Hai\",title:\"KYOTO – GION / HIGASHIYAMA\",\n items:[\n  {t:\"Lưu ý\",a:\"Di chuyển từ Osaka -> Kyoto mất 40p nữa\"},\n  {t:\"07:00–08:00\",a:\"thuê Kimono + làm tóc\"},\n  {t:\"08:00–10:30\",a:\"Gion → Yasaka Pagoda (Hokanji) → phố cổ Higashiyama\"},\n  {t:\"11:00\",a:\"trả kimono\"},\n  {t:\"Trưa\",a:\"ăn uống, nghỉ\"},\n  {t:\"Chiều\",a:\"Kiyomizu-dera + Yasaka Shrine\"},\n  {t:\"Tối\",a:\"Gion/Kawaramachi\"}],\n tips:[\"Nên chụp ảnh Gion/Higashiyama thật sớm trước khi đông. Kimono không thuận tiện để đi quá nhiều điểm.\"],\n move:[\"Đi bộ + bus/tàu nội thành Kyoto\"],\n places:[{name:\"Kibune\",links:[{k:\"TikTok\",u:\"https://www.tiktok.com/@huytravelblog/video/7629981031872908565?is_from_webapp=1&sender_device=pc\"}]}]},\n\n{city:\"KYOTO\",num:\"Ngày 7\",date:\"22/9\",dow:\"Thứ Ba\",title:\"KYOTO – FUSHIMI INARI / ARASHIYAMA\",\n items:[\n  {t:\"Lưu ý\",a:\"Di chuyển từ Osaka -> Kyoto mất 40p nữa\"},\n  {t:\"06:30\",a:\"Fushimi Inari Taisha – cổng Torii\"},\n  {t:\"09:00\",a:\"ăn sáng\"},\n  {t:\"10:30–14:00\",a:\"Arashiyama – Bamboo Forest – Tenryuji\"},\n  {t:\"14:00–16:00\",a:\"sông Hozu / khu phố Arashiyama\"},\n  {t:\"Tối\",a:\"về trung tâm Kyoto nghỉ\"}],\n tips:[\"Fushimi Inari nên đi rất sớm để tránh đông. Không cần leo toàn bộ núi nếu muốn giữ sức.\"],\n move:[\"JR/tàu + đi bộ\"]},\n\n{city:\"OSAKA → TOKYO\",num:\"Ngày 8\",date:\"23/9\",dow:\"Thứ Tư\",title:\"OSAKA → TOKYO\",\n items:[\n  {t:\"07:30–10:00\",a:\"Kamo River – cà phê / chill\"},\n  {t:\"10:00–12:00\",a:\"mua sắm nhẹ quanh Kawaramachi\"},\n  {t:\"12:00\",a:\"ăn trưa\"},\n  {t:\"~15:00\",a:\"ra ga Shin Osaka\"},\n  {t:\"Chiều–tối\",a:\"Shinkansen về Tokyo\"}],\n tips:[\"Không xếp điểm tham quan xa. Nên để hành lý gọn và đi Shinkansen buổi chiều.\"],\n move:[\"Kyoto → Tokyo bằng Shinkansen\"]},\n\n{city:\"TOKYO\",num:\"Ngày 10\",date:\"25/9\",dow:\"Thứ Sáu\",title:\"TOKYO – ASAKUSA / TOKYO SKYTREE / GINZA\",\n items:[\n  {t:\"08:30\",a:\"Sensoji + Asakusa\",s:[\"• Ghé thăm cổng Kaminarimon chụp ảnh, đi dạo dọc phố mua sắm Nakamise-dori.\"]},\n  {t:\"10:00 – 10:30\",a:\"Di chuyển sang Harajuku\"},\n  {t:\"10:30 – 11:30\",a:\"Đền Meiji Jingu (Minh Trị Thiên Hoàng Miếu)\"},\n  {t:\"11:30\",a:\"chim cút về với chồng iu\"},\n  {t:\"16:00\",a:\"Tokyo Skytree / Solamachi\"},\n  {t:\"16:00 – 16:30\",a:\"Di chuyển sang Ginza\"},\n  {t:\"16:30 – 21:00\",a:\"Khám phá thánh địa mua sắm xa xỉ Ginza về đêm\",s:[\"• Ginza Six (kiến trúc nghệ thuật độc đáo), ghé tòa nhà Uniqlo Ginza 12 tầng\",\"Onitsuka Tiger Ginza – nếu muốn thêu tên giày\"]}],\n tips:[\"Nếu đặt thêu tại Onitsuka Tiger, hỏi trước thời gian nhận giày để tránh ảnh hưởng lịch.\"],\n move:[\"• Đi Harajuku: lên ga Asakusa Station, đi line Tokyo Metro Ginza Line đi thẳng đến ga Omotesando hoặc ga Shibuya, sau đó đổi tàu một chặng ngắn sang ga Harajuku (Tổng thời gian đi tàu khoảng 30–35 phút).\",\"• Đi Ginza: Từ ga Oshiage, đi line Toei Asakusa Line đi thẳng đến ga Higashi-ginza hoặc ga Ginza (mất khoảng 15 phút, không cần đổi tàu).\"],\n places:[{name:\"Tokyo Solamachi main entrance\",note:\"Oshiage “SKYTREE” Station\",\n   links:[{k:\"Google Maps\",u:\"https://maps.app.goo.gl/F7ddtymjgW7u4P4x6\"},{k:\"Instagram\",u:\"https://www.instagram.com/reel/DUwdKVZEzbM/?utm_source=ig_web_button_share_sheet\"}]}]},\n\n{city:\"YAMANASHI\",num:\"Ngày 11\",date:\"26/9\",dow:\"Thứ Bảy\",title:\"NÚI PHÚ SĨ – KAWAGUCHIKO\",\n items:[\n  {t:\"07:00\",a:\"xuất phát Tokyo\"},\n  {t:\"Sáng\",a:\"Lawson view Fuji → Honcho Street → Chureito Pagoda\"},\n  {t:\"Trưa\",a:\"Kawaguchiko\"},\n  {t:\"Chiều\",a:\"Oshino Hakkai / Hồ Yamanaka (tùy thời tiết)\"},\n  {t:\"19:00–20:00\",a:\"về Tokyo\"}],\n tips:[\"Ưu tiên ngày Fuji trước concert vì đây là ngày linh hoạt nhất. Nếu dự báo thời tiết xấu, có thể đổi sang một ngày sau 23/09.\"],\n move:[\"Xe riêng/private tour là thuận tiện nhất\"],\n places:[{name:\"Fujikawaguchiko\",links:[{k:\"Google Maps\",u:\"https://maps.app.goo.gl/QHTZs4mhxs7KCixK7\"},{k:\"Instagram\",u:\"https://www.instagram.com/reel/DSCc0TOj5we/?utm_source=ig_web_button_share_sheet\"}]}]},\n\n{city:\"TOKYO / YOKOHAMA\",num:\"Ngày 12\",date:\"27/9\",dow:\"Chủ Nhật\",title:\"TOKYO – ODAIBA / TEAMLAB / TOKYO BAY / YOKOHAMA\",\n items:[\n  {t:\"09:30 – 11:30\",a:\"Trải nghiệm nghệ thuật số tại teamLab Planets\",s:[\"• TeamLab: Nên đặt suất vào cửa sớm lúc 8:30 hoặc 9:00 sáng. Thời gian tham quan trung bình khoảng 2 tiếng. Tại đây bạn sẽ đi chân trần và lội qua các phòng ngập nước nghệ thuật vô cùng độc đáo.\",\"• Trang phục đi teamLab: Vì có phân khu lội nước sâu đến đầu gối, hãy mặc quần có thể dễ dàng kéo lên cao quá gối. Tránh mặc váy ngắn hoặc váy xòe vì sàn nhà ở nhiều phòng làm bằng gương phản chiếu.\"]},\n  {t:\"11:30 – 14:00\",a:\"Khám phá Odaiba & Ăn trưa\",s:[\"• Check-in nhanh với Tượng Nữ thần Tự do, ngắm cầu Cầu Vồng và chụp ảnh cùng Tượng khổng lồ Unicorn Gundam tại DiverCity.\",\"• Ăn trưa tại khu food court sầm uất ở đây.\"]},\n  {t:\"14:00 – 15:00\",a:\"Di chuyển sang Yokohama\"},\n  {t:\"15:00 - 17:30\",a:\"Dạo chơi khu Minato Mirai 21, tham quan khu Nhà kho gạch đỏ (Red Brick Warehouse) cổ kính bên bờ biển.\"},\n  {t:\"17:30 - 19:00\",a:\"Sang Phố Tàu Yokohama (Chinatown)\"},\n  {t:\"19:00 - 20:30\",a:\"Quay lại khu vực cảng ngắm vòng quay mặt trời khổng lồ Cosmo Clock 21 lên đèn rực rỡ phản chiếu xuống mặt nước trước khi bắt tàu về lại trung tâm Tokyo.\"}],\n tips:[\"• Nên đặt vé teamLab trước nếu chọn đi.\",\"• Đến sớm để chụp ảnh với tượng Unicorn Gundam khổng lồ ở DiverCity.\",\"• Dạo chơi tại công viên bờ biển Odaiba (Odaiba Marine Park) ngắm bản sao Tự do và cầu Vồng.\",\"• Ghé một trung tâm thương mại như Decks hoặc Aqua City.\"],\n move:[\"• Đi sang Odaiba: Từ ga Shin-Toyosu (ngay trước cửa teamLab) đi tàu tuyến Yurikamome đi thẳng sang ga Daiba hoặc Tokyo Teleport (khoảng 15 phút).\",\"• Đi Yokohama: Từ ga Tokyo Teleport, đi Rinkai Line (hướng đi Osaki), tàu sẽ chạy thẳng nối chuyến vào hệ thống JR Saikyo/Shonan-Shinjuku Line để đến thẳng ga Yokohama hoặc ga Minato-Mirai mà không cần đổi tàu giữa đường (mất khoảng 45 phút).\"],\n places:[{name:\"Prince Shiba Park\",note:\"1 góc khác ngắm hoàng hôn Tokyo Tower\",\n   links:[{k:\"Google Maps\",u:\"https://maps.app.goo.gl/3CpDRioDwhyEVxui6\"},{k:\"Instagram\",u:\"https://www.instagram.com/reel/DXjKnpIEZXw/?utm_source=ig_web_button_share_sheet\"}]}]},\n\n{city:\"TOKYO\",num:\"Ngày 13\",date:\"28/9\",dow:\"Thứ Hai\",title:\"TOKYO – NGÀY DỰ PHÒNG / ĐIỂM YÊU THÍCH\",\n items:[\n  {t:\"Cả ngày\",a:\"Ngày đệm để quay lại điểm chưa đi được hoặc đổi lịch do thời tiết\"},\n  {t:\"Gợi ý\",a:\"Fuji lần 2 nếu ngày 18 thời tiết xấu; hoặc Shimokitazawa / Nakameguro / Daikanyama\"},\n  {t:\"Tối\",a:\"ăn tối cùng người yêu, hoàn tất hành lý\"}],\n tips:[\"Giữ ngày này tương đối trống để xử lý thay đổi lịch, mua sắm còn thiếu hoặc nghỉ ngơi.\"],\n move:[\"Tùy điểm lựa chọn\"],\n places:[{name:\"Công viên Symbol Promenade\",note:\"Từ cuối tháng 5 đến giữa tháng 6, công viên Symbol Promenade, Odaiba khoác lên cho mình chiếc áo rực rỡ với hàng nghìn đóa cẩm tú cầu xanh, tím, trắng trải dài khắp lối đi. Nổi bật nhất là khu Hydrangea Stairs - nổi tiếng với những bậc thang được bao quanh bởi hai hàng hoa bung nở đẹp như tranh vẽ.\",\n   addr:[\"1 Chome-3 Aomi, Koto City, Tokyo\",\"Hydrangea Stairs at Symbol Promenade Park 紫陽花の小路\"],\n   links:[{k:\"Google Maps\",u:\"https://maps.app.goo.gl/nz85wAYoAvo8Fb3r8\"},{k:\"Facebook\",u:\"https://www.facebook.com/share/p/1H9BnzUW9L/\"}]}]},\n\n{city:\"TOKYO\",num:\"Ngày 14\",date:\"29/9\",dow:\"Thứ Ba\",title:\"TOKYO – MUA SẮM / SHINJUKU\",\n items:[\n  {t:\"10:00\",a:\"Shinjuku\"},\n  {t:\"11:00–14:00\",a:\"mua sắm\"},\n  {t:\"14:30–17:00\",a:\"khu Kabukicho / Tokyo Metropolitan Government Building\"},\n  {t:\"17:30–20:00\",a:\"ăn tối + mua quà\"},\n  {t:\"Tối\",a:\"sắp xếp hành lý\"}],\n tips:[\"Dành ngày này để mua quà và các món cần mang về; luôn mang passport khi mua sắm để làm tax refund nếu đủ điều kiện.\"],\n move:[\"Tàu nội thành Tokyo\"]},\n\n{city:\"TOKYO → VIỆT NAM\",num:\"Ngày 14\",date:\"30/9\",dow:\"Thứ Tư\",title:\"TOKYO → SÂN BAY → VIỆT NAM\",\n items:[\n  {t:\"Sáng\",a:\"ăn sáng, kiểm tra hành lý & giấy tờ\"},\n  {t:\"Trong ngày\",a:\"Ra sân bay theo giờ chuyến bay\"},\n  {t:\"Sân bay\",a:\"Check-in → xuất cảnh → mua sắm Duty Free\"},\n  {t:\"Chuyến bay\",a:\"Bay về Việt Nam\"}],\n tips:[\"Không nên xếp lịch tham quan trong ngày bay. Kiểm tra lại giờ bay trước khi chốt phương án di chuyển.\"],\n move:[\"Nhà ăm chã → NRT → Việt Nam\"]}\n];\n\nconst LEGS = [\n  {name:\"HÀ NỘI\",range:\"15/9\"},\n  {name:\"TOKYO\",range:\"16 — 23/9\"},\n  {name:\"OSAKA / KYOTO\",range:\"20 — 23/9\"},\n  {name:\"TOKYO & QUANH ĐÓ\",range:\"25 — 29/9\"},\n  {name:\"VỀ VIỆT NAM\",range:\"30/9\"}\n];\n\nconst HOSTS = {\"Google Maps\":[\"GM\",\"#2a3560\"],\"VJW\":[\"VJ\",\"#2a3560\"],\"TikTok\":[\"TT\",\"#17161a\"],\"Instagram\":[\"IG\",\"#b8392a\"],\"Threads\":[\"TH\",\"#17161a\"],\"Facebook\":[\"FB\",\"#2a3560\"]};\n\nclass Component extends DCLogic {\n  state = {screen:\"cover\", day:0, det:null, now:Date.now()};\n\n  componentDidMount(){\n    this.timer = setInterval(()=>this.setState({now:Date.now()}), 30000);\n  }\n  componentWillUnmount(){ clearInterval(this.timer); }\n\n  pager(){ if(!this._p) this._p = React.createRef(); return this._p; }\n\n  scrollTo(i, smooth){\n    const el = this.pager().current;\n    if(!el) return;\n    el.scrollTo({left: i * el.clientWidth, behavior: smooth ? \"smooth\" : \"auto\"});\n  }\n\n  goDay(i){\n    if(this.state.screen === \"days\"){ this.setState({day:i}); this.scrollTo(i, true); }\n    else { this.setState({screen:\"days\", day:i}); setTimeout(()=>this.scrollTo(i, false), 30); }\n  }\n\n  openItem(di, ii){ this.setState({det:{d:di, i:ii, kind:\"item\"}}); }\n  openPlace(di, pi){ this.setState({det:{d:di, i:pi, kind:\"place\"}}); }\n\n  linkRow(l){\n    const h = HOSTS[l.k] || [\"↗\",\"#7a7266\"];\n    let host = l.u;\n    try { host = new URL(l.u).hostname.replace(\"www.\",\"\"); } catch(e){}\n    return {k:l.k, u:l.u, g:h[0], bg:h[1], host:host};\n  }\n\n  countdown(){\n    const start = new Date(\"2026-09-15T20:30:00+07:00\").getTime();\n    const diff = start - this.state.now;\n    if(diff <= 0) return {num:\"0\", unit:\"Đang trong chuyến đi\", sub:\"Chúc chuyến đi thật vui\"};\n    const d = Math.floor(diff/86400000);\n    if(d >= 1) return {num:String(d), unit:\"ngày nữa là bay\", sub:\"Nội Bài · 20:30 ngày 15/9\"};\n    const h = Math.floor(diff/3600000);\n    return {num:String(h), unit:\"giờ nữa là bay\", sub:\"Nội Bài · 20:30 ngày 15/9\"};\n  }\n\n  renderVals(){\n    const st = this.state;\n    const showCd = this.props.showCountdown ?? true;\n    const showNotes = this.props.showDayNotes ?? true;\n    const showPlaces = this.props.showPlaces ?? true;\n    const cd = this.countdown();\n\n    const days = D.map((d, di)=>{\n      const blocks = [];\n      if(d.tips && d.tips.length) blocks.push({label:\"MẸO & LƯU Ý\", lines:d.tips});\n      if(d.move && d.move.length) blocks.push({label:\"DI CHUYỂN\", lines:d.move});\n      return {\n        city:d.city, num:d.num, date:d.date, dow:d.dow, title:d.title,\n        dateShort:d.date, timeSpan:d.span || \"\",\n        jump:()=>this.goDay(di),\n        tickColor: di === st.day ? \"#b8392a\" : \"rgba(23,22,26,.15)\",\n        items: d.items.map((it, ii)=>({\n          t:it.t, a:it.a, s:it.s || [], r:it.r || [],\n          hasSubs: !!(it.s && it.s.length), hasRefs: !!(it.r && it.r.length),\n          dot: (it.r && it.r.length) ? \"#b8392a\" : \"#2a3560\",\n          open:()=>this.openItem(di, ii)\n        })),\n        places: showPlaces ? (d.places || []).map((p, pi)=>({\n          name:p.name, meta:(p.links||[]).map(l=>l.k).join(\" · \"),\n          open:()=>this.openPlace(di, pi)\n        })) : [],\n        hasPlaces: showPlaces && !!(d.places && d.places.length),\n        blocks: blocks, showNotes: showNotes && blocks.length > 0\n      };\n    });\n\n    const cur = D[st.day] || D[0];\n    const vals = {\n      isCover: st.screen === \"cover\", isDays: st.screen === \"days\", isDetail: !!st.det,\n      showCountdown: showCd, cdNum:cd.num, cdUnit:cd.unit, cdSub:cd.sub,\n      legs: LEGS, days: days,\n      curNum:cur.num, curDate:cur.date, curDow:cur.dow,\n      curCounter: (st.day+1) + \" / \" + D.length,\n      pagerRef: this.pager(),\n      onScroll: (e)=>{\n        const el = e.currentTarget;\n        const i = Math.round(el.scrollLeft / el.clientWidth);\n        if(i !== this.state.day && i >= 0 && i < D.length) this.setState({day:i});\n      },\n      goDays: ()=>this.goDay(0),\n      goCover: ()=>this.setState({screen:\"cover\"}),\n      prev: ()=>this.goDay(Math.max(0, st.day-1)),\n      next: ()=>this.goDay(Math.min(D.length-1, st.day+1)),\n      closeDetail: ()=>this.setState({det:null}),\n      dtCrumb:\"\", dtTime:\"\", dtTitle:\"\", dtSubs:[], dtHasSubs:false,\n      dtLinks:[], dtHasLinks:false, dtBlocks:[], dtHasBlocks:false,\n      dtSiblings:[], dtHasSiblings:false\n    };\n\n    if(st.det){\n      const d = D[st.det.d];\n      vals.dtCrumb = d.num.toUpperCase() + \" · \" + d.date + \" · \" + d.city;\n      if(st.det.kind === \"item\"){\n        const it = d.items[st.det.i];\n        vals.dtTime = it.t;\n        vals.dtTitle = it.a;\n        vals.dtSubs = it.s || [];\n        vals.dtHasSubs = !!(it.s && it.s.length);\n        vals.dtLinks = (it.r || []).map(l=>this.linkRow(l));\n        vals.dtHasLinks = vals.dtLinks.length > 0;\n        const bl = [];\n        bl.push({label:\"TRONG NGÀY\", lines:[d.title]});\n        if(d.tips && d.tips.length) bl.push({label:\"MẸO & LƯU Ý\", lines:d.tips});\n        if(d.move && d.move.length) bl.push({label:\"DI CHUYỂN\", lines:d.move});\n        vals.dtBlocks = bl; vals.dtHasBlocks = true;\n        vals.dtSiblings = d.items.map((o, oi)=>({t:o.t, a:o.a, open:()=>this.openItem(st.det.d, oi)}))\n          .filter((o, oi)=>oi !== st.det.i);\n        vals.dtHasSiblings = vals.dtSiblings.length > 0;\n      } else {\n        const p = d.places[st.det.i];\n        vals.dtTime = \"ĐỊA DANH\";\n        vals.dtTitle = p.name;\n        vals.dtSubs = p.addr || [];\n        vals.dtHasSubs = !!(p.addr && p.addr.length);\n        vals.dtLinks = (p.links || []).map(l=>this.linkRow(l));\n        vals.dtHasLinks = vals.dtLinks.length > 0;\n        const bl = [];\n        if(p.note) bl.push({label:\"NOTE\", lines:[p.note]});\n        bl.push({label:\"THUỘC NGÀY\", lines:[d.num + \" (\" + d.date + \") · \" + d.title]});\n        vals.dtBlocks = bl; vals.dtHasBlocks = true;\n      }\n    }\n    return vals;\n  }\n}\n<\u002Fscript>\n\n\n<\u002Fbody><\u002Fhtml>"
   </script>
 </body>
+
 </html>
